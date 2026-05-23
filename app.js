@@ -33,7 +33,9 @@ main()
     });
 
 async function main() {
-    await mongoose.connect(dbUrl);
+    await mongoose.connect(dbUrl, {
+        serverSelectionTimeoutMS: 30000,
+    });
 }
 
 app.set("view engine", "ejs");
