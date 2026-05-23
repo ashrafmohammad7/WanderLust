@@ -5,7 +5,7 @@ const ExpressError = require("../utils/ExpressError.js");
 const Review = require("../models/review.js");
 const Listing = require("../models/listing.js");
 const {
-    validateReivew,
+    validateReview,
     isLoggedIn,
     isReviewAuthor,
 } = require("../middleware.js");
@@ -16,7 +16,7 @@ const reviewController = require("../controllers/reviews.js");
 router.post(
     "/",
     isLoggedIn,
-    validateReivew,
+    validateReview,
     wrapAsync(reviewController.createReview)
 );
 
