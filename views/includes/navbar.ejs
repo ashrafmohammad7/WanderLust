@@ -60,20 +60,26 @@
                 </form>
             </div>
 
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="/listings/new"
-                    >WanderLust your thoughts</a
-                >
-                <% if(!locals.currUser) { %>
-                <a class="nav-link" href="/signup"><b>Sign Up</b></a>
-                <a class="nav-link" href="/login"><b>Login</b></a>
-                <% } %> <% if(locals.currUser ) { %>
-                <a class="nav-link" href="/cart"
-                    ><i class="fa fa-shopping-cart"></i> Cart</a
-                >
-                <a class="nav-link" href="/logout">Log out</a>
-                <% } %>
-            </div>
+            <div class="navbar-nav ms-auto align-items-center">
+
+    <% if(!locals.currUser) { %>
+
+        <a class="nav-link" href="/signup"><b>Sign Up</b></a>
+        <a class="nav-link" href="/login"><b>Login</b></a>
+
+    <% } else { %>
+
+        <a class="nav-link" href="/listings/new">
+            WanderLust your thoughts
+        </a>
+
+        <a class="nav-link" href="/logout">
+            <b>Logout</b>
+        </a>
+
+    <% } %>
+
+</div>
         </div>
     </div>
 </nav>
