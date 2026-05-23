@@ -62,10 +62,15 @@
 
             <div class="navbar-nav ms-auto align-items-center">
 
-    <% if(!locals.currUser) { %>
+    <% if(!currUser) { %>
 
-        <a class="nav-link" href="/signup"><b>Sign Up</b></a>
-        <a class="nav-link" href="/login"><b>Login</b></a>
+        <a class="nav-link" href="/signup">
+            <b>Sign Up</b>
+        </a>
+
+        <a class="nav-link" href="/login">
+            <b>Login</b>
+        </a>
 
     <% } else { %>
 
