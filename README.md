@@ -244,24 +244,6 @@ This application is deployed on Render.
 - 🌙 Dark Mode UI
 - 📱 Progressive Web App (PWA)
 
----
-
-# 📖 Development Log
-
-Detailed project development history:
-
-📄 [DEVLOG.md](./DEVLOG.md)
-
----
-
-# 🏗 System Architecture
-
-Detailed project architecture and flow:
-
-📄 [ARCHITECTURE.md](./ARCHITECTURE.md)
-
----
-
 # 👨‍💻 Author
 
 ## Ashraf Mohammad
