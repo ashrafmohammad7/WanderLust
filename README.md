@@ -1,81 +1,169 @@
 # WanderLust 🌍
 
-A full-stack Airbnb-inspired travel listing web application where users can explore destinations, create listings, upload property images, and manage authentication securely.
+![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
+![Express.js](https://img.shields.io/badge/Express.js-Framework-black)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)
+![Render](https://img.shields.io/badge/Deployment-Render-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## 🚀 Live Deployment
-
-🔗 https://wanderlust-8eyf.onrender.com
+A full-stack Airbnb-inspired travel listing web application where users can explore destinations, create listings, upload property images, search locations, and manage authentication securely.
 
 ---
 
-## 📌 Features
+## 🚀 Live Demo
+
+🌐 https://wanderlust-8eyf.onrender.com
+
+---
+
+# ✨ Features
 
 - 🔐 User Authentication (Signup/Login/Logout)
 - 🏡 Create, Edit & Delete Listings
-- 📷 Image Uploads using Cloudinary
+- 📷 Cloudinary Image Upload Support
 - ⭐ Add & Delete Reviews
-- 🔎 Search Destinations
-- 🗂 Category Filtering
-- 📱 Responsive UI
-- ☁ MongoDB Atlas Database
-- 🚀 Render Deployment
+- 🔎 Destination Search Functionality
+- 🗂 Category-Based Filtering
+- 📱 Responsive User Interface
+- ☁ MongoDB Atlas Integration
 - 🍪 Session & Cookie Authentication
 - ⚡ Flash Messages & Error Handling
+- 🚀 Production Deployment on Render
 
 ---
 
-## 🛠 Tech Stack
+# 📸 Application Screenshots
 
-### Frontend
+## 🏠 Home Page
+
+Displays all travel listings with category filters and search functionality.
+
+![Home Page](./screenshots/home.png)
+
+---
+
+## 🔐 User Login Page
+
+Secure authentication using Passport.js.
+
+![Login Page](./screenshots/Login%20Page.png)
+
+---
+
+## 📝 User Signup Page
+
+New users can register securely.
+
+![Signup Page](./screenshots/Signup%20Page.png)
+
+---
+
+## ✅ Authenticated User Interface
+
+Navbar dynamically changes after successful login.
+
+![Logged In](./screenshots/Logged%20in.png)
+
+---
+
+## ➕ Create New Listing
+
+Users can create and upload new travel destinations.
+
+![Create Listing](./screenshots/Create%20Listing.png)
+
+---
+
+## 🗂 Category Filtering
+
+Listings can be filtered using categories.
+
+![Category Filter](./screenshots/Category%20Filter.png)
+
+---
+
+## 🏙 Successfully Added Listing
+
+Demonstrates successful listing creation with image upload.
+
+![New Listing](./screenshots/New%20Listing.png)
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
 - HTML5
 - CSS3
 - Bootstrap 5
 - EJS Templates
 
-### Backend
+## Backend
 - Node.js
 - Express.js
 
-### Database
+## Database
 - MongoDB Atlas
 - Mongoose
 
-### Authentication
+## Authentication
 - Passport.js
 - express-session
 
-### Cloud Storage
+## Cloud Storage
 - Cloudinary
 - Multer
 
-### Deployment
+## Deployment
 - Render
 
 ---
 
-## 📂 Project Structure
+
+# 🏗 System Architecture
+
+The following diagram represents the overall architecture and workflow of the WanderLust application.
+
+![WanderLust Architecture](./screenshots/architecture.png)
+
+---
+
+# 📂 Project Structure
 
 ```bash
 WanderLust/
 │
 ├── controllers/
+├── middleware/
 ├── models/
 ├── routes/
-├── views/
+├── screenshots/
 ├── public/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
 ├── utils/
-├── middleware.js
+├── views/
+│   ├── includes/
+│   ├── layouts/
+│   ├── listings/
+│   ├── users/
+│   └── error.ejs
+│
 ├── cloudConfig.js
+├── middleware.js
 ├── schema.js
 ├── app.js
-└── package.json
+├── package.json
+└── README.md
 ```
 
 ---
 
-## ⚙ Environment Variables
+# ⚙ Environment Variables
 
-Create a `.env` file and add:
+Create a `.env` file in the root directory and add:
 
 ```env
 ATLASDB_URL=your_mongodb_connection_string
@@ -91,27 +179,33 @@ MAP_TOKEN=your_mapbox_token
 
 ---
 
-## 📦 Installation
+# 📦 Installation & Setup
 
-Clone the repository:
+## Clone Repository
 
 ```bash
 git clone https://github.com/ashrafmohammad7/WanderLust.git
 ```
 
-Go to project directory:
+---
+
+## Navigate to Project Folder
 
 ```bash
 cd WanderLust
 ```
 
-Install dependencies:
+---
+
+## Install Dependencies
 
 ```bash
 npm install
 ```
 
-Run the application:
+---
+
+## Run Application
 
 ```bash
 npm start
@@ -119,30 +213,58 @@ npm start
 
 ---
 
-## 🌐 Deployment
+# 🌐 Deployment
 
-This project is deployed on Render:
+This application is deployed on Render.
 
 🔗 https://wanderlust-8eyf.onrender.com
 
 ---
 
+# 📚 Learning Outcomes
 
-## 📚 Learning Outcomes
-
-- Full Stack Application Development
+- Full Stack Web Development
 - RESTful Routing
 - Authentication & Authorization
-- Database Integration
-- Deployment & Production Debugging
-- Cloudinary Image Management
 - MVC Architecture
+- MongoDB Integration
+- Cloudinary File Uploads
+- Deployment & Production Debugging
+- Session Management
+- Backend Validation & Error Handling
 
 ---
 
-## 👨‍💻 Author
+# 🧠 Future Improvements
 
-### Ashraf Mohammad
+- ❤️ Wishlist Feature
+- 💳 Payment Gateway Integration
+- 📍 Interactive Maps
+- 📧 Email Verification
+- 🌙 Dark Mode UI
+- 📱 Progressive Web App (PWA)
+
+---
+
+# 📖 Development Log
+
+Detailed project development history:
+
+📄 [DEVLOG.md](./DEVLOG.md)
+
+---
+
+# 🏗 System Architecture
+
+Detailed project architecture and flow:
+
+📄 [ARCHITECTURE.md](./ARCHITECTURE.md)
+
+---
+
+# 👨‍💻 Author
+
+## Ashraf Mohammad
 
 - GitHub: https://github.com/ashrafmohammad7
 
